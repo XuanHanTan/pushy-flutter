@@ -34,7 +34,7 @@ class Pushy {
 
   static void listen() {
     // Invoke native method
-    _channel.invokeMethod('listen');
+    //_channel.invokeMethod('listen');
 
     // Listen for notifications published on event channel
     _eventChannel.receiveBroadcastStream().listen((dynamic data) {
